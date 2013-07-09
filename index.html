@@ -5,10 +5,16 @@
 </head>
 <body>
 	<div>eventually this will contain real cool things like web applications!</div>
+	<div id="output"></div>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
-
+<script src="http://backbonejs.org/backbone-min.js"></script>
 <script src="js/main.js"></script>
+<script>
+	var parker = new Person({name:"Parker Honkin' Jones", age: 26, occupation: "poser"});
+	
 
+
+	$("#output").html("<p>" + parker.toString("") + "</p>");</script>
 </html>
