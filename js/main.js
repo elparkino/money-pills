@@ -9,10 +9,11 @@ var sampleItem = Backbone.Model.extend({
     
     defaults: {
         subject: 'STAAR Sample Item',
-        gradeLevel: "EOC",
+        gradeLevel: 'EOC',
         language: 'English',
-        url: "http://progresstesting.com
-"       img_url: "http://progre/img.png"
+        file_path: 'sampleTests/staarsample.pdf',
+        url: 'http://progresstesting.com',
+        img_url: 'img/img.png'
     }
 });
 
