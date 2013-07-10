@@ -65,12 +65,12 @@ body{
 					color:#666;
 				}
 	
-	#download_list{
+	/* #download_list{
 		float:right;
 		display:inline-block;
 		width:35%;
 	}
-	
+	*/
 		#info:before{
 			content: "Drag and Drop your files here..." !important;
 			padding-top:40px;
