@@ -71,7 +71,12 @@
 
 <footer>
 <script id="itemTemplate" type="text/template">
-    <a href="<%= name %>"</a><strong><%= name %></strong> (Grade: <%= grade %>) - Academic Rigor: <%= Rigor %>
+    <div class="span3 item-container well draggable">
+    	<a class="downloadable" href="<%= file_path %>"><img src="<%=img_url%>"/></a>
+    	<a class="downloadable" href="<%= file_path %>"><%=subject%></a>
+    	<p><%=gradeLevel%></p>
+    	<p>language</p>
+    </div>
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>

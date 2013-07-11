@@ -5,6 +5,7 @@ v 0.0.1
  */
 // Sample Test Item Model
 // This provides the standards for an object that represents an item for download
+
 var sampleItem = Backbone.Model.extend({
     
     defaults: {
@@ -12,12 +13,44 @@ var sampleItem = Backbone.Model.extend({
         gradeLevel: 'EOC',
         language: 'English',
         file_path: 'sampleTests/staarsample.pdf',
-        url: 'http://progresstesting.com',
+        url: 'localhost/backapp/',
         img_url: 'img/img.png'
     }
 });
 
-var itemView = Backbone.View.extend({
+
+var DownloadItems = Backbone.Collection.extend({
+
+    model: sampleItem
+
+});
+
+// View for all people
+var GalleryView = Backbone.View.extend({
+
+    tagName: 'ul',
+
+    initialize: function(){
+        console.log(this.collection);
+    },
+
+    render: function(){
+      console.log(sampleItem);
+      this.collection.each(function(sampleItem){
+        var itemView = new ItemView({model: sampleItem });
+        this.$el.append(itemView.el);
+        
+      }, this);
+
+    //Loop over all the Sample Item objects
+    //Should call render for the Item objects
+    //Should display a collection as HTML
+
+    }
+});
+
+
+var ItemView = Backbone.View.extend({
    
    tagName: 'li',
 
@@ -32,11 +65,33 @@ var itemView = Backbone.View.extend({
   }
 });
 
-var downloadItems = Backbone.Collection.extend({
+var downloadItems = new DownloadItems([
+    {
+        subject: 'STAAR Math',
+        gradeLevel: '4',
+        language: 'English',
+        file_path: 'assets/sampleTests/staarsample.pdf',
+        url: 'localhost/backapp/',
+        img_url: 'assets/img/img.png'
+    },
+    {
+        subject: 'STAAR Science',
+        gradeLevel: '4',
+        language: 'English',
+        file_path: 'assets/sampleTests/staarsample.pdf',
+        url: 'localhost/backapp/',
+        img_url: 'assets/img/img.png'
+    },
+    {
+        subject: 'STAAR Reading',
+        gradeLevel: '5',
+        language: 'English',
+        file_path: 'sampleTests/staarsample.pdf',
+        url: 'localhost/backapp/',
+        img_url: 'assets/img/img.png'
+    }
+]);
 
-    model: sampleItem
-
-});
 
 // calls from console
 
