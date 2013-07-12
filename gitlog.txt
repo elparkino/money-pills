@@ -1,0 +1,77 @@
+commit 3d8a18fd0759cd72e01e9f603b97738b0ff07882
+Author: Parker Jones <pjones@progresstesting.com>
+Date:   Thu Jul 11 20:40:46 2013 -0400
+
+    shit's fucked
+
+commit c7ba4bf5325013d8627e23beec895e3f861b3c25
+Author: Parker Jones <pjones@progresstesting.com>
+Date:   Thu Jul 11 20:09:04 2013 -0400
+
+    I have an idem library rendering. woot.
+
+commit 4479e4816f0e9bca57fecf87d76d5ef2eb3c9fe1
+Author: Parker Jones <pjones@progresstesting.com>
+Date:   Thu Jul 11 17:01:11 2013 -0400
+
+    output to #output.  Still not rendering inside of the container and/or drag and drop download working. We're getting there though
+
+commit f30b3290e8cb7c4d993d51abbddcc39898c8977f
+Author: Parker Jones <pjones@progresstesting.com>
+Date:   Wed Jul 10 18:41:48 2013 -0400
+
+    I did a whole bunch of stuff.  We have a skeleton framework now, but no drag and drop and no download and no dynamic data modling yet.  It's a start... three days and counting
+
+commit 399eb1f6cbb87a9d339f03360591b0b031df1b4a
+Author: Parker Jones <pjones@progresstesting.com>
+Date:   Wed Jul 10 16:33:53 2013 -0400
+
+    updated index.html to include zipdrop js assets and corresponding classes, building html framework for page
+
+commit 8836f089ccfcd751dc7fbeacc6b77831ba2ce9b0
+Author: Parker Jones <pjones@progresstesting.com>
+Date:   Wed Jul 10 15:35:30 2013 -0400
+
+    added the files to build the front end of the app, zip drop etc.
+
+commit a165ecf6ca82bea5d58d03af0cfee54d2b0310f0
+Author: Parker Jones <pjones@progresstesting.com>
+Date:   Wed Jul 10 14:20:19 2013 -0400
+
+    brief interruption
+
+commit 017d12a068150bbfe9af093cb9c1143830e46b1b
+Author: Parker <parker.emailaddress@gmail.com>
+Date:   Wed Jul 10 12:14:03 2013 -0400
+
+    v0.0.1.3 coming at your bz.  Converted all of my demo models to Progress Testing Naming Scheme and moved the template to an external file.
+
+commit b7d1693009f5bf3b7526fc289de85e449ef83fde
+Author: Parker Jones <pjones@progresstesting.com>
+Date:   Tue Jul 9 19:59:11 2013 -0400
+
+    moved template to index.html, added template, have not yet removed template from view class
+
+commit 6bed5e96188a3200f8faa30fc9db69921436ffa2
+Author: Parker Jones <pjones@progresstesting.com>
+Date:   Tue Jul 9 18:15:50 2013 -0400
+
+    fixed the issue with the javascript stack, added validation to data model
+
+commit 5209c45263d305185e91ec53e1db6ccc50b00bba
+Author: Parker Jones <pjones@progresstesting.com>
+Date:   Tue Jul 9 17:31:51 2013 -0400
+
+    updated the readme, and lazily added all files. Start adding individual files to your project instead of using . shortcut
+
+commit 291d51a191a00121078c8209530e5758f84d91b2
+Author: Parker Jones <pjones@progresstesting.com>
+Date:   Tue Jul 9 17:24:49 2013 -0400
+
+    pushing the files, starting this train
+
+commit 4b6862298802f21e8a6fae6ed038225524ba902e
+Author: Parker Jones <parker.emailaddress@gmail.com>
+Date:   Tue Jul 9 14:20:34 2013 -0700
+
+    Initial commit

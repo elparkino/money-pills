@@ -15,39 +15,7 @@
 
 
 <body>
-		<div id="container">
-		<div class="container-fluid">
-			<div class="row-fluid">
-				<div class="offset2 span8"id="download_instructions">
-					<h1>Please select the items to fill your STAAR Teachers' Backpack</h1>
-					<p>Grab a file and drag it to the <em>downloads</em> area</p>
-				</div>
-			</div>			
-		</div>
-
-		<div class="container-fluid">
-
-			<div class="row-fluid headr" id="download_head">
-				<h1 class="offset2 span8">Downloads</h1>	
-			</div>
-
-			<div class="row-fluid" id="download_list">
-            	<div class="offset2 span8" id="info"></div>
-            </div>
-
-            <div class="row-fluid">
-            	<div class="offset2 span8">
-            	<h4 id="file_title"></h4>
-            	<ul id="file_ul"></ul>
-            	<a id="zipdrop_download" href="#">Download</a>	
-            	</div>
-        	</div>
-
-		</div>
-
-		<div id="downloadable_files" class= "container-fluid"></div>
-	</div>
-
+	<div id="container" class= "container-fluid"></div>
 </body>
 
 

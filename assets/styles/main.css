@@ -24,7 +24,8 @@ body{
 	#downloadable_files{
 		float:left;
 		display:inline-block;
-		width:60%;
+		width:100%;
+		/*60% out-of-box*/
 	}
 	
 		#thumbs{

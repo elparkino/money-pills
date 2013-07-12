@@ -31,7 +31,7 @@ var GalleryView = Backbone.View.extend({
 
     tagName: 'div',
 
-    className: 'row-fluid',
+    className: 'row-fluid download-gallery',
 
     render: function(){
 
@@ -163,8 +163,16 @@ var downloadItems = new DownloadItems([
         file_path: 'sampleTests/staarsample.pdf',
         url: 'localhost/backapp/',
         img_url: 'assets/img/img.png'
+    },
+        {
+        subject: 'STAAR US history',
+        gradeLevel: '8',
+        language: 'English & Spanish',
+        file_path: 'sampleTests/staarsample.pdf',
+        url: 'localhost/backapp/',
+        img_url: 'assets/img/img.png'
     }
 ]);
 
 var galleryView = new GalleryView({collection: downloadItems});
-$('#downloadable_files').html(galleryView.render().el);
+$('#container').html(galleryView.render().el);
