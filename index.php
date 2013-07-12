@@ -15,7 +15,6 @@
 
 
 <body>
-	<div id="output"></div>
 		<div class="container-fluid">
 			<div class="row-fluid">
 				<div class="offset2 span8"id="download_instructions">
@@ -25,41 +24,33 @@
 			</div>			
 		</div>
 
+		<div class="container-fluid">
+
+			<div class="row-fluid headr" id="download_head">
+				<h1 class="offset2 span8">Downloads</h1>	
+			</div>
+
+			<div class="row-fluid" id="download_list">
+            	<div class="offset2 span8" id="info"></div>
+            </div>
+
+            <div class="row-fluid">
+            	<div class="offset2 span8">
+            	<h4 id="file_title"></h4>
+            	<ul id="file_ul"></ul>
+            	<a id="zipdrop_download" href="#">Download</a>	
+            	</div>
+        	</div>
+
+		</div>
+
 		<div id="container" class="container-fluid">
 
 			<div class="row-fluid">
 
-				<div class= "span6" id="files-container">
+				<div class= "span12" id="downloadable_files">
 
 
-					<div class="row-fluid">
-        				<div class="span12" id="downloadable_files">
-                			<div id="thumbs">
-								<div id="1" class="draggable thumb_container">
-									<a class="downloadable" href="assets/sampleTests/STAAR4Math.pdf"><img class="downloadable" src="assets/img/img.png" alt="leafs.jpg" /><br />Staar 4 Math</a>
-								</div>
-							</div>	
-						</div>
-					</div>
-				</div>
-
-				<div class="span6">
-
-					<div class="row-fluid headr" id="download_head">
-						<h1 class="offset2 span8">Downloads</h1>	
-					</div>
-
-					<div clas="row-fluid">
-						<div class="span12" id="download_list">
-	                	
-	                		<div class="span12" id="info"></div>
-	                		<h4 id="file_title"></h4>
-	                		<ul id="file_ul">
-
-	                		</ul>
-	                		<a id="zipdrop_download" href="#">Download</a>
-	            		</div>
-	            	</div>
 				</div>
 
 			</div>
@@ -71,8 +62,8 @@
 
 <footer>
 <script id="itemTemplate" type="text/template">
-    <div class="span3 item-container well draggable">
-    	<a class="downloadable" href="<%= file_path %>"><img src="<%=img_url%>"/></a>
+    <div class="item-container well">
+    	<a class="draggable" href="<%= file_path %>"><img src="<%=img_url%>"/></a>
     	<a class="downloadable" href="<%= file_path %>"><%=subject%></a>
     	<p><%=gradeLevel%></p>
     	<p>language</p>

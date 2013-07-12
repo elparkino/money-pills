@@ -26,21 +26,22 @@ var DownloadItems = Backbone.Collection.extend({
 });
 
 // View for all people
+// 
 var GalleryView = Backbone.View.extend({
 
     tagName: 'ul',
 
-    initialize: function(){
-        console.log(this.collection);
-    },
+    className: 'span12 unstyled',
 
     render: function(){
-      console.log(sampleItem);
+
       this.collection.each(function(sampleItem){
         var itemView = new ItemView({model: sampleItem });
-        this.$el.append(itemView.el);
+        this.$el.append(itemView.render().el);
         
       }, this);
+
+      return this;
 
     //Loop over all the Sample Item objects
     //Should call render for the Item objects
@@ -54,15 +55,16 @@ var ItemView = Backbone.View.extend({
    
    tagName: 'li',
 
+   className: 'span6',
+
    my_template: _.template($('#itemTemplate').html()),
 
-   initialize: function(){
-     this.render();
-   },
 
    render: function(){
      this.$el.html( this.my_template(this.model.toJSON()));
+     return this;
   }
+
 });
 
 var downloadItems = new DownloadItems([
@@ -89,11 +91,80 @@ var downloadItems = new DownloadItems([
         file_path: 'sampleTests/staarsample.pdf',
         url: 'localhost/backapp/',
         img_url: 'assets/img/img.png'
+    },
+    {
+        subject: 'STAAR Math',
+        gradeLevel: '4',
+        language: 'English',
+        file_path: 'assets/sampleTests/staarsample.pdf',
+        url: 'localhost/backapp/',
+        img_url: 'assets/img/img.png'
+    },
+    {
+        subject: 'STAAR Science',
+        gradeLevel: '4',
+        language: 'English',
+        file_path: 'assets/sampleTests/staarsample.pdf',
+        url: 'localhost/backapp/',
+        img_url: 'assets/img/img.png'
+    },
+    {
+        subject: 'STAAR Reading',
+        gradeLevel: '5',
+        language: 'English',
+        file_path: 'sampleTests/staarsample.pdf',
+        url: 'localhost/backapp/',
+        img_url: 'assets/img/img.png'
+    },
+    {
+        subject: 'STAAR Math',
+        gradeLevel: '4',
+        language: 'English',
+        file_path: 'assets/sampleTests/staarsample.pdf',
+        url: 'localhost/backapp/',
+        img_url: 'assets/img/img.png'
+    },
+    {
+        subject: 'STAAR Science',
+        gradeLevel: '4',
+        language: 'English',
+        file_path: 'assets/sampleTests/staarsample.pdf',
+        url: 'localhost/backapp/',
+        img_url: 'assets/img/img.png'
+    },
+    {
+        subject: 'STAAR Reading',
+        gradeLevel: '5',
+        language: 'English',
+        file_path: 'sampleTests/staarsample.pdf',
+        url: 'localhost/backapp/',
+        img_url: 'assets/img/img.png'
+    },
+    {
+        subject: 'STAAR Math',
+        gradeLevel: '4',
+        language: 'English',
+        file_path: 'assets/sampleTests/staarsample.pdf',
+        url: 'localhost/backapp/',
+        img_url: 'assets/img/img.png'
+    },
+    {
+        subject: 'STAAR Science',
+        gradeLevel: '4',
+        language: 'English',
+        file_path: 'assets/sampleTests/staarsample.pdf',
+        url: 'localhost/backapp/',
+        img_url: 'assets/img/img.png'
+    },
+    {
+        subject: 'STAAR Reading',
+        gradeLevel: '5',
+        language: 'English',
+        file_path: 'sampleTests/staarsample.pdf',
+        url: 'localhost/backapp/',
+        img_url: 'assets/img/img.png'
     }
 ]);
 
-
-// calls from console
-
-// var person = new Person;
-// var personView = new PersonView({ model: person });
+var galleryView = new GalleryView({collection: downloadItems});
+$('#downloadable_files').html(galleryView.render().el);
