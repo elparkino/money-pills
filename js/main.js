@@ -29,9 +29,9 @@ var DownloadItems = Backbone.Collection.extend({
 // 
 var GalleryView = Backbone.View.extend({
 
-    tagName: 'ul',
+    tagName: 'div',
 
-    className: 'span12 unstyled',
+    className: 'row-fluid',
 
     render: function(){
 
@@ -53,9 +53,9 @@ var GalleryView = Backbone.View.extend({
 
 var ItemView = Backbone.View.extend({
    
-   tagName: 'li',
+   tagName: 'div',
 
-   className: 'span6',
+   className: 'span4 pull-left',
 
    my_template: _.template($('#itemTemplate').html()),
 

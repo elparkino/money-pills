@@ -15,6 +15,7 @@
 
 
 <body>
+		<div id="container">
 		<div class="container-fluid">
 			<div class="row-fluid">
 				<div class="offset2 span8"id="download_instructions">
@@ -44,17 +45,8 @@
 
 		</div>
 
-		<div id="container" class="container-fluid">
-
-			<div class="row-fluid">
-
-				<div class= "span12" id="downloadable_files">
-
-
-				</div>
-
-			</div>
-		</div>
+		<div id="downloadable_files" class= "container-fluid"></div>
+	</div>
 
 </body>
 
