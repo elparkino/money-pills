@@ -86,8 +86,8 @@ function parse_items(){
 
     for(var i=0; i<(items.length-1); i++){
 
-        var item_url[i] = sample_array.url;
-        var title_url[i] = sample_array.title;
+        item_url[i] = sample_array.url;
+        title_url[i] = sample_array.title;
     }
 
 
