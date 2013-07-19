@@ -8,7 +8,7 @@ Template Name: Anthing but Home  Page Template
 	
 	<div id="container" class= "container-fluid"></div>
 	
-	<div class="hidden row parent-row">
+	<div class="row parent-row">
 	
 		<?php get_template_part('templates/content', 'page'); ?>
 
