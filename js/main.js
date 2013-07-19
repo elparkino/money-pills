@@ -67,33 +67,32 @@ var ItemView = Backbone.View.extend({
 
 });
 
-function get_wordpress_attachments(url){
+function get_wordpress_attachments(){
 
-    var pt_json = $.getJSON(url + "get_page&page_id=22&include=attachments");
-    var items = pt_json.responseJSON.page.attachments;
+    return $.getJSON("http://parker-jones.org/staar/?json=get_page&page_id=22&include=attachments");
 
-    return items;
 }
 
 function parse_items(){
 
-    var pt_url = "https://parker-jones.org/staar/?json=";
+    //var pt_url = "http://parker-jones.org/staar/?json=";
 
-    var sample_array = get_wordpress_attachments(pt_url);
+    
 
-    var item_url = [];
-    var title_url = [];
+    var payload = {};
+    payload.item_url = [];
+    payload.title_url = [];
+    
+    for(var i=0; i<(sample.length); i++){
 
-    for(var i=0; i<(items.length-1); i++){
-
-        item_url[i] = sample_array.url;
-        title_url[i] = sample_array.title;
+        payload.item_url.push(sample[i].url);
+        payload.title_url.push(sample[i].title);
     }
 
-
+    return payload;
 }
-
-
+var sample = get_wordpress_attachments();
+var test = parse_items();
 
 var downloadItems = new DownloadItems([
     {
