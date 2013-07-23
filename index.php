@@ -23,10 +23,10 @@
 <footer>
 <script id="itemTemplate" type="text/template">
     <div class="item-container well">
-    	<a class="draggable" href="<%= file_path %>"><img src="<%=img_url%>"/></a>
-    	<a class="downloadable" href="<%= file_path %>"><%=subject%></a>
-    	<p><%=gradeLevel%></p>
-    	<p>language</p>
+        <a class="draggable" href="<%= file_path %>"><img src="<%=img_url%>"/></a>
+        <a class="downloadable" href="<%= file_path %>"><%=subject%></a>
+        <p><%=gradeLevel%></p>
+        <p>language</p>
     </div>
 </script>
 

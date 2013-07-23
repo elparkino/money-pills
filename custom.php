@@ -35,6 +35,13 @@ function my_scripts_method() {
 		wp_dequeue_style( 'contact-form-7' );
 	}
 
+	if (!is_admin() && is_page( 39 )) {
+		wp_register_style( 'faqcss', '/assets/css/text-style.css' );
+		wp_register_script( 'faqshow', '/assets/js/faqshow.js' );
+		wp_enqueue_style( 'faqcss' );
+		wp_enqueue_script( 'faqshow' );
+	}
+
 }
 function anything_deregister(){
 	if (!is_page(4)){

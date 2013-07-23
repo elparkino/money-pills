@@ -9,12 +9,14 @@ v 0.0.1
 var sampleItem = Backbone.Model.extend({
     
     defaults: {
-        subject: 'STAAR Sample Item',
-        gradeLevel: 'EOC',
-        language: 'English',
-        file_path: 'sampleTests/staarsample.pdf',
-        url: 'localhost/backapp/',
-        img_url: 'img/img.png'
+      caption: "",
+      description: "",
+      id: 282,
+      mime_type: "application/pdf",
+      parent: 22,
+      slug: "staar3math",
+      title: "STAAR3Math",
+      url: "http://parker-jones.org/staar/media/STAAR3Math.pdf"
     }
 });
 
@@ -73,37 +75,224 @@ function get_wordpress_attachments(){
 
 }
 
-function parse_items(){
 
-    //var pt_url = "http://parker-jones.org/staar/?json=";
-
-    
-
-    var payload = {};
-    payload.item_url = [];
-    payload.title_url = [];
-    
-    for(var i=0; i<(sample.length); i++){
-
-        payload.item_url.push(sample[i].url);
-        payload.title_url.push(sample[i].title);
-    }
-
-    return payload;
-}
-var sample = get_wordpress_attachments();
-var test = parse_items();
 
 var downloadItems = new DownloadItems([
     {
-        subject: 'STAAR Math',
-        gradeLevel: '4',
-        language: 'English',
-        file_path: 'assets/sampleTests/staarsample.pdf',
-        url: 'localhost/backapp/',
-        img_url: 'assets/img/img.png'
+      caption: "English Language Arts 1 EOC",
+      description: "",
+      id: 310,
+      mime_type: "application/pdf",
+      parent: 22,
+      slug: "staar-eoc-ela-1-revising",
+      title: "English Language Arts 1 EOC",
+      url: "http://parker-jones.org/staar/media/STAAR-EOC-ELA-1-Revising.pdf"
+    },
+    {
+      caption: "Geometry EOC",
+      description: "",
+      id: 311,
+      mime_type: "application/pdf",
+      parent: 22,
+      slug: "staar-eoc-geometry",
+      title: "STAAR Geometry End of Course Test",
+      url: "http://parker-jones.org/staar/media/STAAR-EOC-Geometry.pdf"
+    },
+    {
+      caption: "STAAR EOC World Geography",
+      description: "",
+      id: 312,
+      mime_type: "application/pdf",
+      parent: 22,
+      slug: "staar-eoc-world-geography",
+      title: "STAAR World Geography End of Course Test",
+      url: "http://parker-jones.org/staar/media/STAAR-EOC-World-Geography.pdf",
+     },
+      {
+      caption: "STAAR Grade 3 Math",
+      description: "",
+      id: 313,
+      mime_type: "application/pdf",
+      parent: 22,
+      slug: "staar-grade-3-math",
+      title: "STAAR Grade 3 Math",
+      url: "http://parker-jones.org/staar/media/STAAR-Grade-3-Math.pdf"
+     },
+      {
+      caption: "STAAR Grade 3 Reading",
+      description: "",
+      id: 314,
+      mime_type: "application/pdf",
+      parent: 22,
+      slug: "staar-grade-3-reading",
+      title: "STAAR Grade 3 Reading",
+      url: "http://parker-jones.org/staar/media/STAAR-Grade-3-Reading.pdf"
+      },
+      {
+      caption: "STAAR Grade 4 Math",
+      description: "",
+      id: 315,
+      mime_type: "application/pdf",
+      parent: 22,
+      slug: "staar-grade-4-math",
+      title: "STAAR Grade 4 Math",
+      url: "http://parker-jones.org/staar/media/STAAR-Grade-4-Math.pdf"
+      },
+      {
+      caption: "STAAR Grade 4 Reading",
+      description: "",
+      id: 316,
+      mime_type: "application/pdf",
+      parent: 22,
+      slug: "staar-grade-4-reading",
+      title: "STAAR Grade 4 Reading",
+      url: "http://parker-jones.org/staar/media/STAAR-Grade-4-Reading.pdf"
+      },
+      {
+      caption: "",
+      description: "",
+      id: 317,
+      mime_type: "application/pdf",
+      parent: 22,
+      slug: "staar-grade-4-writing",
+      title: "STAAR Grade 4 Writing",
+      url: "http://parker-jones.org/staar/media/STAAR-Grade-4-Writing.pdf"
+      },
+      {
+      caption: "",
+      description: "",
+      id: 318,
+      mime_type: "application/pdf",
+      parent: 22,
+      slug: "staar-grade-5-math",
+      title: "STAAR Grade 5 Math",
+      url: "http://parker-jones.org/staar/media/STAAR-Grade-5-Math.pdf"
+      },
+      {
+      caption: "",
+      description: "",
+      id: 319,
+      mime_type: "application/pdf",
+      parent: 22,
+      slug: "staar-grade-5-reading",
+      title: "STAAR Grade 5 Reading",
+      url: "http://parker-jones.org/staar/media/STAAR-Grade-5-Reading.pdf"
+      },
+      {
+      caption: "",
+      description: "",
+      id: 320,
+      mime_type: "application/pdf",
+      parent: 22,
+      slug: "staar-grade-5-science",
+      title: "STAAR Grade 5 Science",
+      url: "http://parker-jones.org/staar/media/STAAR-Grade-5-Science.pdf"
+      },
+      {
+      caption: "",
+      description: "",
+      id: 309,
+      mime_type: "application/pdf",
+      parent: 22,
+      slug: "staar-eoc-ela-1-reading",
+      title: "STAAR-EOC-ELA 1-Reading",
+      url: "http://parker-jones.org/staar/media/STAAR-EOC-ELA-1-Reading.pdf"
+      },
+      {
+      caption: "",
+      description: "",
+      id: 308,
+      mime_type: "application/pdf",
+      parent: 22,
+      slug: "staar-eoc-ela-1-prompts",
+      title: "STAAR-EOC-ELA 1-Prompts",
+      url: "http://parker-jones.org/staar/media/STAAR-EOC-ELA-1-Prompts.pdf"
+      },
+      {
+      caption: "",
+      description: "",
+      id: 307,
+      mime_type: "application/pdf",
+      parent: 22,
+      slug: "staar-eoc-chemistry",
+      title: "STAAR-EOC-Chemistry",
+      url: "http://parker-jones.org/staar/media/STAAR-EOC-Chemistry.pdf"
+      },
+      {
+      caption: "",
+      description: "",
+      id: 306,
+      mime_type: "application/pdf",
+      parent: 22,
+      slug: "staar-eoc-biology",
+      title: "STAAR-EOC-Biology",
+      url: "http://parker-jones.org/staar/media/STAAR-EOC-Biology.pdf"
+      },
+      {
+      caption: "",
+      description: "",
+      id: 305,
+      mime_type: "application/pdf",
+      parent: 22,
+      slug: "staar-eoc-algebra1",
+      title: "STAAR-EOC-Algebra1",
+      url: "http://parker-jones.org/staar/media/STAAR-EOC-Algebra1.pdf"
+      },
+      {
+      caption: "",
+      description: "",
+      id: 321,
+      mime_type: "application/pdf",
+      parent: 22,
+      slug: "staar-grade-6-math",
+      title: "STAAR Grade 6 Math",
+      url: "http://parker-jones.org/staar/media/STAAR-Grade-6-Math.pdf"
+      },
+      {
+      caption: "",
+      description: "",
+      id: 322,
+      mime_type: "application/pdf",
+      parent: 22,
+      slug: "staar-grade-6-reading",
+      title: "STAAR Grade 6 Reading",
+      url: "http://parker-jones.org/staar/media/STAAR-Grade-6-Reading.pdf"
+      },
+      {
+      caption: "",
+      description: "",
+      id: 323,
+      mime_type: "application/pdf",
+      parent: 22,
+      slug: "staar-grade-7-math",
+      title: "STAAR Grade 7 Math",
+      url: "http://parker-jones.org/staar/media/STAAR-Grade-7-Math.pdf"
+      },
+      {
+      caption: "",
+      description: "",
+      id: 324,
+      mime_type: "application/pdf",
+      parent: 22,
+      slug: "staar-grade-7-reading",
+      title: "STAAR Grade 7 Reading",
+      url: "http://parker-jones.org/staar/media/STAAR-Grade-7-Reading.pdf"
     }
 ]);
 
 var galleryView = new GalleryView({collection: downloadItems});
 $('#container').html(galleryView.render().el);
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+
+(function(d){
+  var f = d.getElementsByTagName('SCRIPT')[0], p = d.createElement('SCRIPT');
+  p.type = 'text/javascript';
+  p.async = true;
+  p.src = '//assets.pinterest.com/js/pinit.js';
+  f.parentNode.insertBefore(p, f);
+}(document));

@@ -3,56 +3,19 @@
 Template Name: Fur Template
 */
 ?>
-	
+
 	<script id="itemTemplate" type="text/template">
-    <div class="item-container well">
-    	<a class="draggable" href="<%= file_path %>"><img src="<%=img_url%>"/></a>
-    	<a class="downloadable" href="<%= file_path %>"><%=subject%></a>
-    	<p><%=gradeLevel%></p>
-    	<p>language</p>
-    </div>
+    <a href="<%= url %>"><div id="id-<%= id %>"class="item-container well <%= mime_type %> parent-<%= parent %>">
+    	<a id="img-<%= id %>"class="img" href="<%= url %>"><img src="/staar/assets/img/img.png"/></a>
+    	<a class="download-link" href="<%= url %>"><%=title%></a>
+    	<p><%=caption %></p>
+    	<p><%= description %></p>
+    	<div id="social-<%= id %>"class="sample-social-buttons row-fluid">
+    	<div id="twitter-<%= id %>"class="twitter span4"><a href="https://twitter.com/intent/tweet?text=%23txed+%23assessment+%23+Check+out+<%= title %> at "><img width=100 height=50 src="/staar/assets/img/twitterbuttonbig.png"/></a></div>
+    	<div id="google-<%= id %>"class="google span4"><div class="g-plusone" data-action="share" data-height="tall" data-width=100 data-annotation="none"></div></div>
+    	<div id="pinterest-<%= id %>"class="pinterest span4"><a href="//pinterest.com/pin/create/button/?url=http%3A%2F%2Fparker-jones.org%2Fstaar%2Fsample&media=http%3A%2F%2Fparker-jones.org%2Fstaar%2Fassets%2Fimg%2Fimg.png&description=Pin%20this%20Sample" data-pin-do="buttonPin" data-pin-config="none"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" /></a></div>
+    	</div>
+    </div></a>
 	</script>
 
-	<script id="otherTemplate" type="text/template">
-    <div class="item-container well">
-    	<a class="draggable" href="<%= file_path %>"><img src="<%=img_url%>"/></a>
-    	<a class="downloadable" href="<%= file_path %>"><%=subject%></a>
-    	<p><%=gradeLevel%></p>
-    	<p>language</p>
-    </div>
-	</script>
-	<script id="anotherTemplate" type="text/template">
-    <div class="item-container well">
-    	<a class="draggable" href="<%= file_path %>"><img src="<%=img_url%>"/></a>
-    	<a class="downloadable" href="<%= file_path %>"><%=subject%></a>
-    	<p><%=gradeLevel%></p>
-    	<p>language</p>
-    </div>
-	</script>
-	
-	<script id="andOtherTemplate" type="text/template">
-    <div class="item-container well">
-    	<a class="draggable" href="<%= file_path %>"><img src="<%=img_url%>"/></a>
-    	<a class="downloadable" href="<%= file_path %>"><%=subject%></a>
-    	<p><%=gradeLevel%></p>
-    	<p>language</p>
-    </div>
-	</script>
 
-	<script id="andAnotherTemplate" type="text/template">
-    <div class="item-container well">
-    	<a class="draggable" href="<%= file_path %>"><img src="<%=img_url%>"/></a>
-    	<a class="downloadable" href="<%= file_path %>"><%=subject%></a>
-    	<p><%=gradeLevel%></p>
-    	<p>language</p>
-    </div>
-	</script>
-	<script id="oneMoreTemplate" type="text/template">
-    <div class="item-container well">
-    	<a class="draggable" href="<%= file_path %>"><img src="<%=img_url%>"/></a>
-    	<a class="downloadable" href="<%= file_path %>"><%=subject%></a>
-    	<p><%=gradeLevel%></p>
-    	<p>language</p>
-    </div>
-	</script>
-	

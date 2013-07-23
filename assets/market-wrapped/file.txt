@@ -1,0 +1,8 @@
+STAARAlgebra2.pdf
+STAARELA2Reading-A.pdf
+STAARELA2Reading-B.pdf
+STAARELA2Reading-C.pdf
+STAARELA3Reading.pdf
+STAARPhysics-EOC.pdf
+STAARUSHistory-EOC.pdf
+file.txt
