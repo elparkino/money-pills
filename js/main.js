@@ -9,6 +9,7 @@ v 0.0.1
 var sampleItem = Backbone.Model.extend({
     
     defaults: {
+      tags: null,
       caption: "",
       description: "",
       id: 282,
@@ -79,6 +80,7 @@ function get_wordpress_attachments(){
 
 var downloadItems = new DownloadItems([
     {
+      tags: "writing EOC",
       caption: "English Language Arts 1 EOC",
       description: "",
       id: 310,
@@ -89,6 +91,7 @@ var downloadItems = new DownloadItems([
       url: "http://parker-jones.org/staar/media/STAAR-EOC-ELA-1-Revising.pdf"
     },
     {
+      tags: "math EOC",
       caption: "Geometry EOC",
       description: "",
       id: 311,
@@ -99,6 +102,7 @@ var downloadItems = new DownloadItems([
       url: "http://parker-jones.org/staar/media/STAAR-EOC-Geometry.pdf"
     },
     {
+      tags: "EOC",
       caption: "STAAR EOC World Geography",
       description: "",
       id: 312,
@@ -109,8 +113,9 @@ var downloadItems = new DownloadItems([
       url: "http://parker-jones.org/staar/media/STAAR-EOC-World-Geography.pdf",
      },
       {
+
       caption: "STAAR Grade 3 Math",
-      description: "",
+      description: "math grade-3",
       id: 313,
       mime_type: "application/pdf",
       parent: 22,
@@ -119,6 +124,7 @@ var downloadItems = new DownloadItems([
       url: "http://parker-jones.org/staar/media/STAAR-Grade-3-Math.pdf"
      },
       {
+      tags: "reading grade-3",
       caption: "STAAR Grade 3 Reading",
       description: "",
       id: 314,
@@ -129,6 +135,7 @@ var downloadItems = new DownloadItems([
       url: "http://parker-jones.org/staar/media/STAAR-Grade-3-Reading.pdf"
       },
       {
+      tags: "math grade-4",
       caption: "STAAR Grade 4 Math",
       description: "",
       id: 315,
@@ -139,6 +146,7 @@ var downloadItems = new DownloadItems([
       url: "http://parker-jones.org/staar/media/STAAR-Grade-4-Math.pdf"
       },
       {
+      tags: "reading grade-4",
       caption: "STAAR Grade 4 Reading",
       description: "",
       id: 316,
@@ -149,7 +157,8 @@ var downloadItems = new DownloadItems([
       url: "http://parker-jones.org/staar/media/STAAR-Grade-4-Reading.pdf"
       },
       {
-      caption: "",
+      tags: "writing grade-4",
+      caption: "STAAR Grade 4 Writing",
       description: "",
       id: 317,
       mime_type: "application/pdf",
@@ -159,7 +168,8 @@ var downloadItems = new DownloadItems([
       url: "http://parker-jones.org/staar/media/STAAR-Grade-4-Writing.pdf"
       },
       {
-      caption: "",
+      tags: "math grade-5",
+      caption: "STAAR Grade 5 Math",
       description: "",
       id: 318,
       mime_type: "application/pdf",
@@ -169,7 +179,8 @@ var downloadItems = new DownloadItems([
       url: "http://parker-jones.org/staar/media/STAAR-Grade-5-Math.pdf"
       },
       {
-      caption: "",
+      tags: "reading grade-5",
+      caption: "STAAR Grade 5 Reading",
       description: "",
       id: 319,
       mime_type: "application/pdf",
@@ -179,7 +190,8 @@ var downloadItems = new DownloadItems([
       url: "http://parker-jones.org/staar/media/STAAR-Grade-5-Reading.pdf"
       },
       {
-      caption: "",
+      tags: "science grade-5",
+      caption: "STAAR Grade 5 Science",
       description: "",
       id: 320,
       mime_type: "application/pdf",
@@ -189,57 +201,63 @@ var downloadItems = new DownloadItems([
       url: "http://parker-jones.org/staar/media/STAAR-Grade-5-Science.pdf"
       },
       {
-      caption: "",
+      tags: "reading EOC",
+      caption: "ELA 1 Reading EOC",
       description: "",
       id: 309,
       mime_type: "application/pdf",
       parent: 22,
       slug: "staar-eoc-ela-1-reading",
-      title: "STAAR-EOC-ELA 1-Reading",
+      title: "ELA 1 Reading EOC",
       url: "http://parker-jones.org/staar/media/STAAR-EOC-ELA-1-Reading.pdf"
       },
       {
-      caption: "",
+      tags: "writing EOC",
+      caption: "ELA 1 Prompts EOC",
       description: "",
       id: 308,
       mime_type: "application/pdf",
       parent: 22,
       slug: "staar-eoc-ela-1-prompts",
-      title: "STAAR-EOC-ELA 1-Prompts",
+      title: "ELA 1 Prompts EOC",
       url: "http://parker-jones.org/staar/media/STAAR-EOC-ELA-1-Prompts.pdf"
       },
       {
-      caption: "",
+      tags: "science EOC",
+      caption: "Chemistry EOC",
       description: "",
       id: 307,
       mime_type: "application/pdf",
       parent: 22,
       slug: "staar-eoc-chemistry",
-      title: "STAAR-EOC-Chemistry",
+      title: "Chemistry EOC",
       url: "http://parker-jones.org/staar/media/STAAR-EOC-Chemistry.pdf"
       },
       {
-      caption: "",
+      tags: "science EOC",
+      caption: "Biology EOC",
       description: "",
       id: 306,
       mime_type: "application/pdf",
       parent: 22,
       slug: "staar-eoc-biology",
-      title: "STAAR-EOC-Biology",
+      title: "Biology EOC",
       url: "http://parker-jones.org/staar/media/STAAR-EOC-Biology.pdf"
       },
       {
-      caption: "",
+      tags: "math EOC",
+      caption: "Algebra 1 EOC",
       description: "",
       id: 305,
       mime_type: "application/pdf",
       parent: 22,
       slug: "staar-eoc-algebra1",
-      title: "STAAR-EOC-Algebra1",
+      title: "Algebra 1 EOC",
       url: "http://parker-jones.org/staar/media/STAAR-EOC-Algebra1.pdf"
       },
       {
-      caption: "",
+      tags: "math grade-6",
+      caption: "STAAR Grade 6 Math",
       description: "",
       id: 321,
       mime_type: "application/pdf",
@@ -249,7 +267,8 @@ var downloadItems = new DownloadItems([
       url: "http://parker-jones.org/staar/media/STAAR-Grade-6-Math.pdf"
       },
       {
-      caption: "",
+      tags: "reading grade-6",
+      caption: "STAAR Grade 6 Reading",
       description: "",
       id: 322,
       mime_type: "application/pdf",
@@ -259,7 +278,8 @@ var downloadItems = new DownloadItems([
       url: "http://parker-jones.org/staar/media/STAAR-Grade-6-Reading.pdf"
       },
       {
-      caption: "",
+      tags: "math grade-7",
+      caption: "STAAR Grade 7 Math",
       description: "",
       id: 323,
       mime_type: "application/pdf",
@@ -269,7 +289,8 @@ var downloadItems = new DownloadItems([
       url: "http://parker-jones.org/staar/media/STAAR-Grade-7-Math.pdf"
       },
       {
-      caption: "",
+      tags: "reading grade-7",
+      caption: "STAAR Grade 7 Reading",
       description: "",
       id: 324,
       mime_type: "application/pdf",
@@ -296,3 +317,80 @@ $('#container').html(galleryView.render().el);
   p.src = '//assets.pinterest.com/js/pinit.js';
   f.parentNode.insertBefore(p, f);
 }(document));
+
+function showPopup(url) {
+newwindow=window.open(url,'name','height=1000,width=800,top=200,left=300,resizable');
+if (window.focus) {newwindow.focus()}
+}
+
+//Filter for the Downloads page.
+
+
+$(function(){
+  var $checkboxes = $("input[id^='type-']");
+  $checkboxes.change(function() {
+    var selector = '';
+    $checkboxes.filter(':checked').each(function(){ // checked 
+        selector += '.' + this.id.replace('type-','') + ', '; 
+        // builds a selector like '.reading, .math, .science, ' 
+    });
+    selector = selector.substring(0, selector.length - 2); // remove trailing ', '
+
+    $('.content-container').hide() // hide all rows
+       .filter(selector).show(); // reduce set to matched and show
+  }).change(); 
+});
+
+
+//some more stuff here in javascript
+// $(function(){
+//   $('#chkSpanish').live("click", function() {
+//       if (this.checked) {
+//           $('.spanish').show();
+//       }
+//       else {
+//           $('.spanish').hide();
+//       }
+//   });
+
+//   $('#chkMath').live("click", function() {
+//       if (this.checked) {
+//           $('.math').show();
+//       }
+//       else {
+//           $('.math').hide();
+//       }
+//   });
+//   $('#chkReading').live("click", function() {
+//       if (this.checked) {
+//           $('.reading').show();
+//       }
+//       else {
+//           $('.reading').hide();
+//       }
+//   });
+//   $('#chkWriting').live("click", function() {
+//       if (this.checked) {
+//           $('.writing').show();
+//       }
+//       else {
+//           $('.writing').hide();
+//       }
+//   });
+//   $('#chkScience').live("click", function() {
+//       if (this.checked) {
+//           $('.science').show();
+//       }
+//       else {
+//           $('.science').hide();
+//       }
+//   });
+//   $('#chkEOC').live("click", function() {
+//       if (this.checked) {
+//           $('.eoc').show();
+//       }
+//       else {
+//           $('.eoc').hide();
+//       }
+//   });
+// });

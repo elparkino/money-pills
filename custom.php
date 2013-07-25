@@ -3,29 +3,18 @@
  * Custom functions
  */
 
-$web_pages = array(
-	'home'		=> is_page( 4 ),
-	'item_bank' => is_page( 29 ),
-	'software'	=> is_page( 16 ),
-	'faq'		=> is_page( 39 ),
-	'sample'  	=> is_page( 22 ),
-	'pricing' 	=> is_page( 68 ),
-	'contact' 	=> is_page( 9 )
-);
 
 function my_scripts_method() {
 	
 	if (!is_admin() && is_page(22)) {
 		wp_register_script( 'bbmain', '/assets/js/main.js' , array('jquery','underscore','backbone'));
-		wp_register_style( 'bbstyle', '/assets/css/main.css');
-		wp_enqueue_style( 'bbstyle' );
+		wp_register_script( 'pinterestplus', '/assets/pinterest-plus-html5.min.js' );
 		wp_enqueue_script( 'bbmain' );
 		wp_enqueue_script( 'underscore');
 		wp_enqueue_script( 'backbone');
+		wp_enqueue_script( 'pinterestplus' );
 	}elseif(!is_admin() || !is_page( 22 )){
 		wp_deregister_script( 'bbmain', '/assets/js/main.js' );
-		wp_deregister_style( 'bbstyle', '/assets/css/main.css' );
-		wp_dequeue_style( 'bbstyle', '/assets/css/main.css' );
 		wp_dequeue_script( 'bbmain', '/assets/js/main.js' );
 
 	}
@@ -41,7 +30,8 @@ function my_scripts_method() {
 		wp_enqueue_style( 'faqcss' );
 		wp_enqueue_script( 'faqshow' );
 	}
-
+	wp_register_script( 'piwik', '/assets/js/piwik.js' );
+	wp_enqueue_script( 'piwik' );
 }
 function anything_deregister(){
 	if (!is_page(4)){
