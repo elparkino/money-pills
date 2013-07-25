@@ -113,9 +113,9 @@ var downloadItems = new DownloadItems([
       url: "http://parker-jones.org/staar/media/STAAR-EOC-World-Geography.pdf",
      },
       {
-
+      tags: "math grade-3",
       caption: "STAAR Grade 3 Math",
-      description: "math grade-3",
+      description: "",
       id: 313,
       mime_type: "application/pdf",
       parent: 22,
@@ -298,13 +298,90 @@ var downloadItems = new DownloadItems([
       slug: "staar-grade-7-reading",
       title: "STAAR Grade 7 Reading",
       url: "http://parker-jones.org/staar/media/STAAR-Grade-7-Reading.pdf"
-    }
+      },
+      {
+      tags: "math spanish grade-3",
+      caption: "Math 3 Spanish",
+      description: "",
+      id: 343,
+      mime_type: "application/pdf",
+      parent: 22,
+      slug: "staar3mathspanish",
+      title: "Math 3 Spanish",
+      url: "http://parker-jones.org/staar/media/STAAR3MathSpanish.pdf"
+      }, 
+      {
+      tags: "reading spanish grade-3",
+      caption: "",
+      description: "",
+      id: 344,
+      mime_type: "application/pdf",
+      parent: 22,
+      slug: "staar3readingspanish",
+      title: "Reading 3 Spanish",
+      url: "http://parker-jones.org/staar/media/STAAR3ReadingSpanish.pdf"
+      }, 
+      {
+      tags: "math spanish grade-4",
+      caption: "Math 4 Spanish",
+      description: "",
+      id: 345,
+      mime_type: "application/pdf",
+      parent: 22,
+      slug: "staar4mathspanish",
+      title: "Math 4 Spanish",
+      url: "http://parker-jones.org/staar/media/STAAR4MathSpanish.pdf"
+      }, 
+      {
+      tags: "reading spanish grade-4",
+      caption: "",
+      description: "",
+      id: 346,
+      mime_type: "application/pdf",
+      parent: 22,
+      slug: "staar4readingspanish",
+      title: "Reading 4 Spanish",
+      url: "http://parker-jones.org/staar/media/STAAR4ReadingSpanish.pdf"
+      }, 
+      {
+      tags: "math spanish grade-5",
+      caption: "",
+      description: "",
+      id: 347,
+      mime_type: "application/pdf",
+      parent: 22,
+      slug: "staar5mathspanish",
+      title: "STAAR5MathSpanish",
+      url: "http://parker-jones.org/staar/media/STAAR5MathSpanish.pdf"
+      }, 
+      {
+      tags: "science spanish grade-5",
+      caption: "Science 5 Spanish",
+      description: "",
+      id: 348,
+      mime_type: "application/pdf",
+      parent: 22,
+      slug: "staar5sciencespanish",
+      title: "Science 5 Spanish",
+      url: "http://parker-jones.org/staar/media/STAAR5ScienceSpanish.pdf"
+      }, 
+      {
+      tags: "spanish EOC",
+      caption: "",
+      description: "",
+      id: 349,
+      mime_type: "application/pdf",
+      parent: 22,
+      slug: "staarworldgeography",
+      title: "STAARWorldGeography",
+      url: "http://parker-jones.org/staar/media/STAARWorldGeography.pdf"
+      }
 ]);
 
 var galleryView = new GalleryView({collection: downloadItems});
 $('#container').html(galleryView.render().el);
 
-  (function() {
+(function() {
     var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
     po.src = 'https://apis.google.com/js/plusone.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
@@ -317,6 +394,9 @@ $('#container').html(galleryView.render().el);
   p.src = '//assets.pinterest.com/js/pinit.js';
   f.parentNode.insertBefore(p, f);
 }(document));
+
+
+//Survey pop-up window
 
 function showPopup(url) {
 newwindow=window.open(url,'name','height=1000,width=800,top=200,left=300,resizable');
@@ -336,61 +416,9 @@ $(function(){
     });
     selector = selector.substring(0, selector.length - 2); // remove trailing ', '
 
-    $('.content-container').hide() // hide all rows
-       .filter(selector).show(); // reduce set to matched and show
+    $('.item-container').css('display','none') // hide all rows
+       .filter(selector).css('display','block'); // reduce set to matched and show
   }).change(); 
 });
 
 
-//some more stuff here in javascript
-// $(function(){
-//   $('#chkSpanish').live("click", function() {
-//       if (this.checked) {
-//           $('.spanish').show();
-//       }
-//       else {
-//           $('.spanish').hide();
-//       }
-//   });
-
-//   $('#chkMath').live("click", function() {
-//       if (this.checked) {
-//           $('.math').show();
-//       }
-//       else {
-//           $('.math').hide();
-//       }
-//   });
-//   $('#chkReading').live("click", function() {
-//       if (this.checked) {
-//           $('.reading').show();
-//       }
-//       else {
-//           $('.reading').hide();
-//       }
-//   });
-//   $('#chkWriting').live("click", function() {
-//       if (this.checked) {
-//           $('.writing').show();
-//       }
-//       else {
-//           $('.writing').hide();
-//       }
-//   });
-//   $('#chkScience').live("click", function() {
-//       if (this.checked) {
-//           $('.science').show();
-//       }
-//       else {
-//           $('.science').hide();
-//       }
-//   });
-//   $('#chkEOC').live("click", function() {
-//       if (this.checked) {
-//           $('.eoc').show();
-//       }
-//       else {
-//           $('.eoc').hide();
-//       }
-//   });
-// });

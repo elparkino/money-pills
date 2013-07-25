@@ -22,7 +22,7 @@ Template Name: Download Page Template
 	    <input type="checkbox" id="type-EOC" checked> EOC
 	  </label>
 	  <label class="checkbox">
-	    <input type="checkbox" id="type-Spanish" checked> Spanish Trans-adaption
+	    <input type="checkbox" id="type-spanish" checked> Spanish Trans-adaption
 	  </label>
 
 	</form>
@@ -36,3 +36,9 @@ Template Name: Download Page Template
 	</div>
 
 <?php get_template_part( 'templates/fur', $fur_name = 'template' ); ?>
+
+<noscript>
+ For full functionality of this site it is necessary to enable JavaScript.
+ Here are the <a href="http://www.enable-javascript.com/" target="_blank">
+ instructions how to enable JavaScript in your web browser</a>.
+</noscript>

@@ -25,6 +25,10 @@ img{ border:none;}
    background: #ffdd4f;
 }
 
+.navbar .btn{
+  margin-bottom: 5px;
+}
+
 /**
  * Grid Structural Changes
  */
@@ -207,7 +211,9 @@ color:white;
    height: 325px;
 }
 
-
+.modal-body{
+  max-height: 800px !important;
+}
 /**
  * Testimonials widget
  */
